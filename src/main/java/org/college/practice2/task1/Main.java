@@ -23,7 +23,13 @@ public class Main {
             public String get_author() {
                 return _author;
             }
-        }
+            public String toString() {
+                return "Picture{" +
+                        "name='" + name + '\'' +
+                        ", year=" + year +
+                        ", author='" + author + '\'' +
+                        '}';
+            }
 
     class Gallery {
             private HashMap<String, Integer> pictures;
