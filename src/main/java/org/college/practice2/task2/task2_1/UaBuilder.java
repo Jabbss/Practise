@@ -1,7 +1,7 @@
 package org.college.practice2.task2.task2_1;
 
 public class UaBuilder extends PortfolioBuilder {
-    public ElectronicPortfolio portfolio;
+    private ElectronicPortfolio portfolio;
     private String _title;
     private int _creationYear;
     private String _ownerName;
