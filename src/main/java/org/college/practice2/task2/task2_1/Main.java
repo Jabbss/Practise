@@ -7,7 +7,7 @@ public class Main {
         System.out.println(uaBuilder.toString());
         uaBuilder.PortfolioBuilder();
         uaBuilder.applyTheme("white-blue", true);
-        uaBuilder.getTitle();
+        uaBuilder.PortfolioBuilder();
         uaBuilder.assemble();
         uaBuilder.defineCore("builder", 2024, "Ann");
         System.out.println(uaBuilder.toString());
