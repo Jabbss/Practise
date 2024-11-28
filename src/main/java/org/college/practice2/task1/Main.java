@@ -4,8 +4,9 @@ import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
+
         class Picture {
-            private  String _name;
+            private String _name;
             private int _year;
             private String _author;
 
@@ -14,24 +15,29 @@ public class Main {
                 this._year = _year;
                 this._author = _author;
             }
+
             public String get_name() {
                 return _name;
             }
+
             public int get_year() {
                 return _year;
             }
+
             public String get_author() {
                 return _author;
             }
+
             public String toString() {
                 return "Picture{" +
-                        "name='" + name + '\'' +
-                        ", year=" + year +
-                        ", author='" + author + '\'' +
+                        "name='" + get_name() + '\'' +
+                        ", year=" + get_year() +
+                        ", author='" + get_author() + '\'' +
                         '}';
             }
+        }
 
-    class Gallery {
+        class Gallery {
             private HashMap<String, Integer> pictures;
             private String _name;
             private String _article;
@@ -43,6 +49,7 @@ public class Main {
                 this._article = "";
                 _instances.put(name, this);
             }
+
             public static Gallery getInstance(String name) {
                 return _instances.get(name);
             }
@@ -96,6 +103,7 @@ public class Main {
 
 
         Gallery gallery = new Gallery("Галерея папппая");
+
         gallery.addPicture(new Picture("Mona Lisator", 1231, "artur Purojkov"));
         gallery.addPicture( new Picture("Moxnatka artist" , 1356 , "ja"));
         gallery.addPicture(new Picture("ararararararra", 1764, "Vragalik"));
@@ -109,8 +117,7 @@ public class Main {
         gallery.setArticle("It is a famous gallery");
         System.out.println("Article: " + gallery.getArticle());
 
-        // Информация о галерее
+            // Информация о галерее
         System.out.println(gallery);
-
     }
 }
