@@ -17,7 +17,7 @@ public class Main {
         controller.subscribe(phoneNotifier);
         controller.subscribe(telegramNotifier);
 
-controller.informAlert();
+        controller.informAlert();
         controller.addAlert(alert);
         controller.informAlert();
 
