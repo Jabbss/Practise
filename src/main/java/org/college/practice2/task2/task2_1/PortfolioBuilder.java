@@ -9,5 +9,4 @@ public abstract class PortfolioBuilder {
         public abstract void applyTheme(String colorTheme, boolean isPublicAccess) ;
 
         public abstract ElectronicPortfolio assemble();
-
     }

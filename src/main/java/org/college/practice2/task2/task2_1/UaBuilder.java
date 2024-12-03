@@ -27,7 +27,6 @@ public class UaBuilder extends PortfolioBuilder {
                 ", isPublicAccess = " + _isPublicAccess +
                 ", dataStorage = '" + _dataStorage ;
     }
-
     public String getTitle() {
         return _title;
     }

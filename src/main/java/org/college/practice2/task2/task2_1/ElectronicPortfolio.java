@@ -9,7 +9,6 @@ public class ElectronicPortfolio {
         boolean _isPublicAccess;
         private String _dataStorage;
 
-        // Конструктор
         public ElectronicPortfolio(String title, int creationYear, String ownerName,
                                    String portfolioType, String colorTheme, boolean isPublicAccess, String dataStorage) {
             this._title = title;

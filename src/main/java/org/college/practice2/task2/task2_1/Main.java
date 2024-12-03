@@ -10,6 +10,5 @@ public class Main {
         uaBuilder.defineCore("builder", 2024, "Ann");
         uaBuilder.assemble();
         System.out.println(uaBuilder);
-
     }
 }
