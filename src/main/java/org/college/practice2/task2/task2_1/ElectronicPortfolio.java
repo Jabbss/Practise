@@ -32,14 +32,13 @@ public class ElectronicPortfolio {
     @Override
     public String toString() {
         return "UaBuilder" +
-                "_title='" + _title + '\'' +
-                ", _creationYear=" + _creationYear +
-                ", _ownerName='" + _ownerName + '\'' +
-                ", _portfolioType='" + _portfolioType + '\'' +
-                ", _colorTheme='" + _colorTheme + '\'' +
-                ", _isPublicAccess=" + _isPublicAccess +
-                ", _dataStorage='" + _dataStorage + '\'' +
-                '}';
+                " title = '" + _title + '\'' +
+                ", creationYear = " + _creationYear +
+                ", ownerName = '" + _ownerName + '\'' +
+                ", portfolioType = '" + _portfolioType + '\'' +
+                ", colorTheme = '" + _colorTheme + '\'' +
+                ", isPublicAccess = " + _isPublicAccess +
+                ", dataStorage = '" + _dataStorage ;
     }
 }
 

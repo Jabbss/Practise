@@ -32,24 +32,24 @@ public class UaBuilder extends PortfolioBuilder {
         return _title;
     }
 
-    public String PortfolioBuilder() {
-return "Portfolio created";
-    }
 
+    @Override
     public void defineCore(String title, int creationYear, String ownerName) {
         portfolio = new ElectronicPortfolio(title, creationYear, ownerName, null, null, true, null);
     }
 
+    @Override
     public void configureStyle(String portfolioType) {
         portfolio._portfolioType = portfolioType;
     }
 
+    @Override
     public void applyTheme(String colorTheme, boolean isPublicAccess) {
         portfolio._colorTheme = colorTheme;
         portfolio._isPublicAccess = isPublicAccess;
     }
 
-
+    @Override
     public ElectronicPortfolio assemble() {
         return portfolio;
     }
