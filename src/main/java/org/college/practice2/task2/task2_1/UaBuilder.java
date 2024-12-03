@@ -1,7 +1,7 @@
 package org.college.practice2.task2.task2_1;
 
 public class UaBuilder extends PortfolioBuilder {
-    private ElectronicPortfolio portfolio;
+    private ElectronicPortfolio _portfolio;
     private String _title;
     private int _creationYear;
     private String _ownerName;
@@ -12,12 +12,12 @@ public class UaBuilder extends PortfolioBuilder {
     private String _dataStorage;
 
     public UaBuilder(ElectronicPortfolio portfolio){
-        this.portfolio = portfolio;
+        this._portfolio = portfolio;
     }
 
     public String toString() {
         return "ElectronicPortfolio " +
-                "portfolio = " + portfolio +
+                "portfolio = " + _portfolio +
                 ", title = '" + _title + '\'' +
                 ", creationYear = " + _creationYear +
                 ", ownerName = '" + _ownerName + '\'' +
@@ -34,22 +34,22 @@ public class UaBuilder extends PortfolioBuilder {
 
     @Override
     public void defineCore(String title, int creationYear, String ownerName) {
-        portfolio = new ElectronicPortfolio(title, creationYear, ownerName, null, null, true, null);
+        _portfolio = new ElectronicPortfolio(title, creationYear, ownerName, null, null, true, null);
     }
 
     @Override
     public void configureStyle(String portfolioType) {
-        portfolio._portfolioType = portfolioType;
+        _portfolio._portfolioType = portfolioType;
     }
 
     @Override
     public void applyTheme(String colorTheme, boolean isPublicAccess) {
-        portfolio._colorTheme = colorTheme;
-        portfolio._isPublicAccess = isPublicAccess;
+        _portfolio._colorTheme = colorTheme;
+        _portfolio._isPublicAccess = isPublicAccess;
     }
 
     @Override
     public ElectronicPortfolio assemble() {
-        return portfolio;
+        return _portfolio;
     }
 }
