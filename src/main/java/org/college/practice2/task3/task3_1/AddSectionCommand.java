@@ -9,12 +9,10 @@ public class AddSectionCommand implements CommandInterface {
         this.section = section;
     }
 
-    @Override
     public void execute() {
         portfolio.addSection(section);
     }
 
-    @Override
     public void undo() {
         portfolio.removeSection(section);
     }
