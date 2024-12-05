@@ -13,9 +13,9 @@ public void unSubscribe(Observer obs) {
     _observers.remove(obs);
 }
 
-public void notifyA(StudentPortfolio student, Project project, int grade) {
+public void informAll(StudentPortfolio student, Project project, int grade) {
     for (Observer obs : _observers) {
-        obs.notifyA();
+        obs.inform();
     }
 }
 }

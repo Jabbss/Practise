@@ -8,7 +8,7 @@ public class ClassTeacher extends Observable implements Observer {
     }
 
     @Override
-    public void notifyA() {
+    public void inform() {
         System.out.println("Teacher received notification about student grades.");
     }
 
