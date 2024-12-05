@@ -8,7 +8,7 @@ public class Main {
         student.subscribe(teacher);
         student.addProject(project1);
         teacher.gradeStudent(student, project1, 80);
-        student.informAll(student, project1, 80);
+
 
     }
 }
