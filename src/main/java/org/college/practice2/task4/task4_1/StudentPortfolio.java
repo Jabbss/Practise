@@ -39,4 +39,15 @@ public class StudentPortfolio extends Observable{
     public boolean getIsHaveProject() {
         return isHaveProject;
     }
+
+    @Override
+    public void unSubscribe(Observer obs) {
+        super.unSubscribe(obs);
+    }
+
+    @Override
+    public void subscribe(Observer obs) {
+        super.subscribe(obs);
+    }
+
 }

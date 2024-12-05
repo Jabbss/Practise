@@ -5,10 +5,10 @@ public class Main {
         ClassTeacher teacher = new ClassTeacher("Math");
         StudentPortfolio student = new StudentPortfolio("Alice", false);
         Project project1 = new Project("Math", "Research");
-        teacher.subscribe(teacher);
+        student.subscribe(teacher);
         student.addProject(project1);
         teacher.gradeStudent(student, project1, 80);
-        student.portfolioInfo();
+        student.informAll(student, project1, 80);
 
     }
 }

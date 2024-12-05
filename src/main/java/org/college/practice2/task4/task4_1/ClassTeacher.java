@@ -1,6 +1,6 @@
 package org.college.practice2.task4.task4_1;
 
-public class ClassTeacher extends Observable implements Observer {
+public class ClassTeacher implements Observer {
     private String _subject;
 
     public ClassTeacher(String subject) {
@@ -8,9 +8,9 @@ public class ClassTeacher extends Observable implements Observer {
     }
 
     @Override
-    public void inform() {
+    public void inform(StudentPortfolio student) {
         System.out.println("Teacher received notification about student grades.");
-
+        student.portfolioInfo();
     }
 
     public void gradeStudent(StudentPortfolio student, Project project, int grade) {
@@ -25,15 +25,4 @@ public class ClassTeacher extends Observable implements Observer {
                 System.out.println("I mustn`n grade this work");
         }
     }
-
-    @Override
-    public void subscribe(Observer obs) {
-        super.subscribe(obs);
-    }
-
-    @Override
-    public void unSubscribe(Observer obs) {
-        super.unSubscribe(obs);
-    }
-
 }
