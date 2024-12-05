@@ -25,7 +25,6 @@ public class StudentPortfolio extends Observable{
 
     public void setProjectGrade(Project project, int grade) {
         _projectGrades.put(project, grade);
-
         informAll(this, project, grade);
     }
 

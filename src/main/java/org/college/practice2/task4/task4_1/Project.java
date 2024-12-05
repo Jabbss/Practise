@@ -17,6 +17,7 @@ public class Project {
         return _projectType;
     }
 
+
     @Override
     public String toString() {
         return "Project name = '" + _projectName + "', type = '" + _projectType;

@@ -10,6 +10,7 @@ public class ClassTeacher extends Observable implements Observer {
     @Override
     public void inform() {
         System.out.println("Teacher received notification about student grades.");
+
     }
 
     public void gradeStudent(StudentPortfolio student, Project project, int grade) {
