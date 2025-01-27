@@ -15,8 +15,6 @@ public class Window extends WindowComponent {
     @Override
     public void draw() {
         System.out.println("Drawing Window: " + title + " [" + width + "x" + height + "]");
-        for (WindowComponent component : nestedComponents.values()) {
-            component.draw();
-        }
+        super.draw();
     }
 }

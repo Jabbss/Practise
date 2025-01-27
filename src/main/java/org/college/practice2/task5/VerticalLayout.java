@@ -13,8 +13,6 @@ public class VerticalLayout extends WindowComponent {
     @Override
     public void draw() {
         System.out.println("Drawing VerticalLayout: " + width + "x" + height);
-        for (WindowComponent component : nestedComponents.values()) {
-            component.draw();
-        }
+        super.draw();
     }
 }

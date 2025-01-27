@@ -6,7 +6,10 @@ public abstract class WindowComponent {
     protected String name;
     protected HashMap<String, WindowComponent> nestedComponents = new HashMap<>();
 
-    public void draw() {
+    public  void draw() {
+        for (WindowComponent component : nestedComponents.values()) {
+            component.draw();
+        }
     }
 
     public void addComponent(WindowComponent component) {
