@@ -20,6 +20,5 @@ public class WindowManager extends WindowComponent {
     public void draw() {
         System.out.println("Initializing window drawing...");
         window.draw();
-        super.draw();
     }
 }
